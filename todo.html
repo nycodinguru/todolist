@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.page{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+		#stuff{
+				
+				vertical-align: middle;
+
+				
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="page">
+		
+	<div id="stuff">
+		
+	
+
+	<input type="text" name="enter" value="" placeholder="TYPE TO DO HERE" id="input"> <button type="button" id="button">ADD TO LIST</button>
+	<p id="list"></p>
+
+	</div>
+
+	</div>
+
+<script>
+
+button.addEventListener("click", addtolist)
+
+
+function addtolist(){	
+
+var input = document.getElementById('input').value;
+var list = document.getElementById('list').value;
+var para = document.createElement('p');
+var text = document.createTextNode(input);
+
+console.log(text)
+console.log(input)
+
+   		para.appendChild(text);
+    document.body.appendChild(para);
+	 
+
+}
+
+
+
+</script>
+
+</body>
+
+
+</html>
